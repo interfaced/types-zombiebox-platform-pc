@@ -1,6 +1,6 @@
 import AbstractDevice from 'zombiebox/zb/device/abstract-device';
 import Rect from 'zombiebox/zb/geometry/rect';
-import HTML5Video from 'zombiebox/zb/device/common/HTML5-video';
+import IVideo from 'zombiebox/zb/device/interfaces/i-video';
 import LocalStorage from 'zombiebox/zb/device/common/local-storage';
 import Info from './info';
 import Input from './input';
@@ -11,7 +11,7 @@ export default class Device extends AbstractDevice {
   public input: Input;
   constructor();
   public init(): void;
-  public createVideo(rect: Rect): HTML5Video;
+  public createVideo(rect: Rect): IVideo;
   public getMAC(): string;
   public getIP(): string;
   public exit(): void;
