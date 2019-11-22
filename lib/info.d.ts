@@ -3,13 +3,13 @@ import { Resolution } from 'zombiebox/zb/device/resolutions';
 
 export default class Info extends AbstractInfo {
   constructor();
-  public type(): string;
-  public version(): string;
-  public manufacturer(): string;
-  public model(): string;
-  public serialNumber(): string;
-  public softwareVersion(): string;
-  public hardwareVersion(): string;
-  public osdResolutionType(): Resolution;
+  type(): string;
+  version(): string;
+  manufacturer(): string;
+  model(): string;
+  serialNumber(): string;
+  softwareVersion(): string;
+  hardwareVersion(): string;
+  osdResolutionType(): Resolution;
   protected _getLocale(): string;
 }
